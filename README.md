@@ -15,13 +15,18 @@
 
 ## 安装
 
+发布到 npm 后，在 Coopanion 设置 › 扩展 里搜索 `cortico-world-spotify-lyrics` 安装。
+
+用源码联调时，在扩展页选「从本地路径安装」指向本仓库，或手动链接：
+
 ```bash
-# 本机联调：在 Coopanion 的扩展目录里链接本包
-cd ~/Library/Application\ Support/Coopanion/extensions
-pnpm add "/Volumes/SSD/Personal Project/Coopanion-spotify-lyrics/src"
+git clone https://github.com/AsakusaCC/coopanion-spotify-lyrics.git
+SRC="$(pwd)/coopanion-spotify-lyrics"    # 换成你克隆到的目录
+cd "$HOME/Library/Application Support/Coopanion/extensions"
+pnpm add "$SRC"
 ```
 
-重启 Coopanion，在 World 概览里启用「Spotify 跟唱」。扩展安装与卸载都需要重启进程才生效。
+安装或卸载扩展后需要重启 Coopanion 进程，随后在 World 概览里启用「Spotify 跟唱」。
 
 ## 配置
 
