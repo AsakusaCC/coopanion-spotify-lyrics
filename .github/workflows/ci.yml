@@ -7,7 +7,8 @@ on:
 
 jobs:
   check:
-    runs-on: ubuntu-latest
+    # 包里声明了 os: darwin（插件只通过 AppleScript 读 Spotify），所以在 macOS 上跑。
+    runs-on: macos-latest
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
