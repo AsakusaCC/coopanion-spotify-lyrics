@@ -1,8 +1,8 @@
 {
   "name": "cortico-world-spotify-lyrics",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "type": "module",
-  "description": "Cortico World: reads the Spotify player on macOS through AppleScript and has the pet sing the current lyric line while dancing.",
+  "description": "在 macOS 上读取 Spotify 的曲目与播放位置，让 Coopanion 的桌宠按句唱出歌词并持续跳舞。歌词来自 LRCLIB，支持本地 lrc 覆盖。",
   "author": "AsakusaCC",
   "license": "MIT",
   "repository": {
@@ -37,7 +37,6 @@
     "describe": "describe.json",
     "tags": [
       "apps",
-      "companion",
       "internet",
       "external-setup",
       "sensitive-data",
