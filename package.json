@@ -1,0 +1,66 @@
+{
+  "name": "cortico-world-spotify-lyrics",
+  "version": "0.3.2",
+  "type": "module",
+  "description": "Cortico World: reads the Spotify player on macOS through AppleScript and has the pet sing the current lyric line while dancing.",
+  "author": "AsakusaCC",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AsakusaCC/coopanion-spotify-lyrics.git"
+  },
+  "homepage": "https://github.com/AsakusaCC/coopanion-spotify-lyrics#readme",
+  "bugs": {
+    "url": "https://github.com/AsakusaCC/coopanion-spotify-lyrics/issues"
+  },
+  "keywords": [
+    "cortico-world",
+    "cortico",
+    "coopanion",
+    "spotify",
+    "lyrics",
+    "desktop-pet",
+    "macos"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "os": [
+    "darwin"
+  ],
+  "main": "./src/index.ts",
+  "cortico": {
+    "kind": "world",
+    "api": 6,
+    "displayName": "Spotify 跟唱",
+    "icon": "icon.svg",
+    "describe": "describe.json",
+    "tags": [
+      "apps",
+      "companion",
+      "internet",
+      "external-setup",
+      "sensitive-data",
+      "experimental"
+    ]
+  },
+  "files": [
+    "src",
+    "icon.svg",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE",
+    "describe.json"
+  ],
+  "scripts": {
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "verify": "npm run typecheck && npm test"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "cortico": "^0.2.10",
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8"
+  }
+}
